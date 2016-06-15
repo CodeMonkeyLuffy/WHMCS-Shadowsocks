@@ -333,9 +333,9 @@ function shadowsocks_ClientArea($params){
   }else{
     $traffic = $params['configoption2'];
   }
-  $traffic_upload = $query_data['upload'] / 1024;
+  $traffic_upload = $query_data['upload'] / 1024 / 1024;
   $traffic_upload = round($traffic_upload, 2);
-  $traffic_download = $query_data['download'] / 1024;
+  $traffic_download = $query_data['download'] / 1024 / 1024;
   $traffic_download = round($traffic_download, 2);
   $traffic_free = ($traffic * 1048576 - ($traffic_upload + $traffic_download)) / 1024;
   $traffic_free = round($traffic_free, 2);

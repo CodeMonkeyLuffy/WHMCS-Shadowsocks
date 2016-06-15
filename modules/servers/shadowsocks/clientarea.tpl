@@ -40,10 +40,10 @@
   		{$port}
   	</td>
   	<td style="text-align:center;padding:10px 15px;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9">
-  		{$traffic_upload} <span style="color:#BBB;">Kilobyte (KB)</span>
+  		{$traffic_upload} <span style="color:#BBB;"> MB</span>
   	</td>
   	<td style="text-align:center;padding:10px 15px;border-bottom:1px solid #e9e9e9">
-  		{$traffic_download} <span style="color:#BBB;">Kilobyte (KB)</span>
+  		{$traffic_download} <span style="color:#BBB;"> MB</span>
   	</td>
   </tr>
   </tbody>
@@ -64,10 +64,10 @@
   </tr>
   <tr>
     <td style="text-align:center;padding:10px 15px;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9">
-      {$traffic} <span style="color:#BBB;">Megabyte (MB)</span>
+      {$traffic} <span style="color:#BBB;"> MB</span>
     </td>
   	<td style="text-align:center;padding:10px 15px;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9">
-  		{$traffic_free} <span style="color:#BBB;">Megabyte (MB)</span>
+  		{$traffic_free} <span style="color:#BBB;"> MB</span>
   	</td>
   	<td style="text-align:center;padding:10px 15px;border-bottom:1px solid #e9e9e9">
   		{$last_year} <span style="color:#BBB;">年</span> {$last_month} <span style="color:#BBB;">月</span> {$last_day} <span style="color:#BBB;">日</span>, <span style="color:#BBB;">{$times}</span> {$last_time} <span style="color:#BBB;">分</span>
