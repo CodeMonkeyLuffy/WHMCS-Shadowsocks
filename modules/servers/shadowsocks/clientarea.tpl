@@ -83,9 +83,6 @@
 			物理地域
 		</td>
 		<td style="padding:8px 10px;background-color:#fcfcfc;border-bottom:1px solid #e9e9e9">
-			网协地址
-		</td>
-		<td style="padding:8px 10px;background-color:#fcfcfc;border-bottom:1px solid #e9e9e9">
 			别名地址
 		</td>
 		<td style="padding:8px 10px;background-color:#fcfcfc;border-bottom:1px solid #e9e9e9">
