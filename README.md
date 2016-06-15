@@ -33,7 +33,9 @@
 
 
 
-## 在服务器上安装API
+## 在 Nginx+PHP-FPM 服务器上安装API
+
+本文以[军哥的 LNMP 一键包](http://lnmp.org) 为例
 
 这里的 API 要和你准备用来给 Shadowsocks Manyuser 用的数据库是同一个服务器，否则就没意义了。
 
@@ -53,7 +55,7 @@
 
 在合适的地方加入如下内容（例如 `root  /home/wwwroot/default` 的下面）：
 
-> 	root  /home/wwwroot/default
+> 	root  /home/wwwroot/default;
 > 	
 > 	if ($http_user_agent != "ThisIsUA"){
 > 		return 444;
@@ -63,7 +65,7 @@
 这里把上面的“ThisIsUA”改为一段 HASH，尽可能的长，例如：
 
 > ```
-> root  /home/wwwroot/default
+> root  /home/wwwroot/default;
 >
 > if ($http_user_agent != "thM95vqtyvT5d7UCUmDYkHrh"){
 > 	return 444;
@@ -72,7 +74,14 @@
 
 
 
-**为了安全和便利，建议这里 listen 到一个奇葩的端口。**
+**为了安全和便利，建议把API listen 到一个奇葩的端口。**
+如 
+
+> listen 80;
+
+改为
+
+> listen 9527;
 
 
 
